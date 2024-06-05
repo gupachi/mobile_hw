@@ -102,7 +102,7 @@ class LetterListFragment : Fragment() {
 
         menuItem.icon =
             if (isLinearLayoutManager)
-                ContextCompat.getDrawable(this.requireContext(), R.drawable.ic_grid_layout)
+                ContextCompat.getDrawable(this.requireContext(), R.drawable.ic_launcher_background)
             else ContextCompat.getDrawable(this.requireContext(), R.drawable.ic_linear_layout)
     }
 

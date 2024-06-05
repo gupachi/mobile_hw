@@ -14,9 +14,46 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<Button xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/button_item"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="4dp"
-    android:padding="8dp" />
+    android:padding="8dp" >
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imageIcon"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="가나다" />
+
+        <TextView
+            android:id="@+id/email_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="마바사"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
